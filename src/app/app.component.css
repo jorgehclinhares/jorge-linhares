@@ -1,0 +1,59 @@
+
+.container-app {
+  height: auto;
+  padding: 15px 0;
+}
+
+.container-profile {
+  width: 170px;
+  height: 170px;
+  position: relative;
+  margin: 0 auto;
+}
+
+.circle-animate {
+  width: 170px;
+  height: 170px;
+  border: 1.3px dashed #D84361;
+  animation: borderRotation 5s infinite;
+}
+
+.profile-image {
+  width: 150px;
+  height: auto;
+  position: absolute;
+  top: 11.5px;
+  left: 11.5px;
+}
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes borderRotation {
+    0%   { border-color:#e5123c; -webkit-transform: rotate(7deg);}
+    25%  { border-color:yellow; -webkit-transform: rotate(7deg);}
+    50%  { border-color:#D84361; -webkit-transform: rotate(7deg);}
+    75%  { border-color:#13efbc; -webkit-transform: rotate(7deg);}
+    100% { border-color:#079bf7; -webkit-transform: rotate(7deg);}
+}
+
+/* Standard syntax */
+@keyframes borderRotation {
+    0%   { border-color:#e5123c; transform: rotate(120deg); -webkit-transform: rotate(120deg); -ms-transform: rotate(120deg); }
+    25%  { border-color:yellow;  transform: rotate(50deg); -webkit-transform: rotate(50deg); -ms-transform: rotate(50deg); }
+    50%  { border-color:#D84361; transform: rotate(100deg); -webkit-transform: rotate(100deg); -ms-transform: rotate(100deg); }
+    75%  { border-color:#13efbc; transform: rotate(80deg); -webkit-transform: rotate(80deg); -ms-transform: rotate(80deg); }
+    100% { border-color:#079bf7; transform: rotate(180deg); -webkit-transform: rotate(7deg); -ms-transform: rotate(180deg); }
+}
+
+.title {
+  margin: 25px 0 5px 0;
+  font-size: 24px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.description {
+  margin: 10px 15px 5px 15px;
+  font-weight: 300;
+  color: #F0F0F0;
+  text-align: center;
+}

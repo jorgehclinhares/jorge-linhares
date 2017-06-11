@@ -1,0 +1,20 @@
+{
+  "name": "jorge-linhares",
+  "description": "",
+  "main": "",
+  "authors": [
+    "Jorge Linhares <jorgehclinhares@gmail.com>"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/jorgehclinhares/jorge-linhares",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "uikit": "^2.27.4"
+  }
+}

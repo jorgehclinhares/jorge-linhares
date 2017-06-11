@@ -1,3 +1,49 @@
-<h1>
-  {{title}}
-</h1>
+<!-- Desktop and Tablet-->
+<div class="container-app uk-hidden-small height-100 uk-flex uk-flex-middle uk-width-1-1">
+  <div class="uk-width-1-1">
+    <div class="uk-grid uk-grid-collapse uk-container-center uk-width-large-8-10 uk-width-medium-8-10 uk-width-9-10">
+      <div class="uk-width-large-2-6 uk-width-medium-2-6 uk-width-1-1 uk-flex uk-flex-middle">
+        <div class="uk-width-1-1">
+          <div class="container-profile">
+            <div class="circle-animate uk-border-circle"></div>
+            <img src="/assets/img/profile.png" class="profile-image uk-align-center uk-border-circle"/>
+          </div>
+          <div class="title">
+            Jorge Linhares
+          </div>
+          <div class="description">
+            Master student in Software Engineering from the University Federal of Pernambuco (UFPE) and Web Fullstack Developer in Viitra.
+          </div>
+        </div>
+      </div>
+      <div class="uk-width-large-4-6 uk-width-medium-4-6 uk-width-1-1">
+        <div class="height-100 uk-flex uk-flex-middle uk-width-1-1">
+          <app-projects></app-projects>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Mobile -->
+<div class="container-app uk-visible-small height-100 uk-width-1-1">
+  <div class="uk-grid uk-grid-collapse uk-container-center uk-width-large-8-10 uk-width-medium-8-10 uk-width-9-10">
+    <div class="uk-width-large-2-6 uk-width-medium-2-6 uk-width-1-1">
+      <div class="container-profile uk-align-center">
+        <div class="circle-animate uk-border-circle"></div>
+        <img src="/assets/img/profile.png" class="profile-image uk-align-center uk-border-circle"/>
+      </div>
+      <div class="title">
+        Jorge Linhares
+      </div>
+      <div class="description">
+        Master student in Software Engineering from the University Federal of Pernambuco (UFPE) and Web Fullstack Developer in Viitra.
+      </div>
+    </div>
+    <div class="uk-width-large-4-6 uk-width-medium-4-6 uk-width-1-1">
+      <div class="height-100 uk-flex uk-flex-middle uk-width-1-1">
+        <app-projects></app-projects>
+      </div>
+    </div>
+  </div>
+</div>

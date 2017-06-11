@@ -1,0 +1,21 @@
+<div class="uk-width-1-1">
+  <span class="section">Timeline</span>
+  <div class="uk-grid uk-grid-collapse container-project" *ngFor="let project of projects">
+    <div class="uk-width-1-5">
+      <div class="date uk-width-1-1">
+        <span>{{ project.showDate }}</span>
+      </div>
+    </div>
+    <div class="uk-width-4-5">
+      <div class="project-title">
+        <span [ngClass]="{ 'active': (project.actual === true) }">{{ project.title }}</span>
+        <img *ngIf="project?.android" src="/assets/svg/android.svg" class="project-icon"/> 
+        <img *ngIf="project?.ios" src="/assets/svg/apple.svg" class="project-icon"/> 
+        <img *ngIf="project?.web"src="/assets/svg/chrome.svg" class="project-icon"/>
+      </div>
+      <div class="project-description">
+        {{ project.description }}
+      </div>
+    </div>
+  </div>
+</div>
