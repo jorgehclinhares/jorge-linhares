@@ -14,13 +14,7 @@ export class ProjectsComponent {
   projects: Array<any>;
 
   constructor () {
-
-    for (let i in Projects) {
-     Projects[i]['showDate'] = moment(Projects[i].date).format("ll");
-    }
-    
     this.projects = Projects;
-
   }
 
 }

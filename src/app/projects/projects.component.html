@@ -1,21 +1,20 @@
-<div class="uk-width-1-1">
-  <span class="section">Timeline</span>
-  <div class="uk-grid uk-grid-collapse container-project" *ngFor="let project of projects">
-    <div class="uk-width-1-5">
-      <div class="date uk-width-1-1">
-        <span>{{ project.showDate }}</span>
+<div class="uk-grid uk-grid-collapse uk-width-1-1 uk-flex uk-flex-middle">
+  <div class="uk-width-large-1-3 uk-width-medium-1-2 uk-width-1-2" *ngFor="let project of projects">
+    <div class="card">
+      <div class="card-image uk-width-1-1" 
+        [style.background-image]="project?.image && 'url(' + project?.image + ')'"
+        [style.background-color]="project?.backgroundColor">
       </div>
-    </div>
-    <div class="uk-width-4-5">
-      <div class="project-title">
-        <span [ngClass]="{ 'active': (project.actual === true) }">{{ project.title }}</span>
-        <img *ngIf="project?.android" src="/assets/svg/android.svg" class="project-icon"/> 
-        <img *ngIf="project?.ios" src="/assets/svg/apple.svg" class="project-icon"/> 
-        <img *ngIf="project?.web"src="/assets/svg/chrome.svg" class="project-icon"/>
+      <div class="container-text uk-width-1-1">
+        <h2> {{ project?.title }} </h2>
+        <p> {{ project?.description }} </p>
+        <div class="uk-grid uk-grid-collapse">
+          <div class="content-icon uk-width-2-10" *ngFor="let tag of project.tags" >
+            <img class="icon" src="/assets/svg/{{tag}}.svg" data-uk-tooltip title="{{tag}}"/>
+          </div>
+        </div>
       </div>
-      <div class="project-description">
-        {{ project.description }}
-      </div>
+      <!--<img src="{{ project.image }}" class="uk-width-1-1"/>-->
     </div>
   </div>
 </div>

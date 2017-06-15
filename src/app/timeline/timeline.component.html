@@ -1,0 +1,17 @@
+<div class="uk-width-1-1">
+  <div class="uk-grid uk-grid-collapse container-project" *ngFor="let project of projects">
+    <div class="uk-width-1-5">
+      <div class="date uk-width-1-1">
+        <span>{{ project.showDate }}</span>
+      </div>
+    </div>
+    <div class="uk-width-4-5">
+      <div class="project-title">
+        <span [ngClass]="{ 'active': (project.actual === true) }">{{ project.title }}</span>
+      </div>
+      <div class="project-description">
+        {{ project.description }}
+      </div>
+    </div>
+  </div>
+</div>

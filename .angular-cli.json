@@ -20,11 +20,14 @@
       "prefix": "app",
       "styles": [
         "styles.css",
-        "../bower_components/uikit/css/uikit.min.css"
+        "../bower_components/uikit/css/uikit.min.css",
+        "../bower_components/uikit/css/components/tooltip.min.css",
+        "../bower_components/font-awesome/css/font-awesome.min.css"
       ],
       "scripts": [
         "../bower_components/jquery/dist/jquery.min.js",
-        "../bower_components/uikit/js/uikit.min.js"
+        "../bower_components/uikit/js/uikit.min.js",
+        "../bower_components/uikit/js/components/tooltip.min.js"
       ],
       "environmentSource": "environments/environment.ts",
       "environments": {
