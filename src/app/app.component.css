@@ -1,123 +1,222 @@
-
-.container-app {
-  height: auto;
-  padding: 15px 0;
+.header {
+  background-image: url('/assets/img/michal-parzuchowski-37537.jpg');
+  height: 600px;
+  background-size: cover;
+  background-position: center;
+}
+@media (max-width: 768px) { 
+  .header {
+    background-image: url('/assets/img/michal-parzuchowski-37537.jpg');
+    height: 400px;
+    background-size: cover;
+    background-position: center;
+  }
 }
 
-.container-profile {
-  width: 170px;
-  height: 170px;
-  position: relative;
+.header-title {
+  color: #FFFFFF;
+  text-align: right;
+}
+
+.header-title p {
+  margin: 0;
+  padding: 0;
+}
+
+.header-title .name {
+  font-size: 50px;
+  font-weight: 300;
+  line-height: 50px;
+  letter-spacing: -1px;
+}
+
+@media (max-width: 768px) {
+  .header-title .name {
+    font-size: 30px;
+    line-height: 30px;
+    text-align: center;
+  }
+}
+
+.header-title .lastname {
+  font-size: 70px;
+  font-weight: 600;
+  line-height: 80px;
+  letter-spacing: -1px;
+}
+
+@media (max-width: 768px) {
+  .header-title .lastname {
+    font-size: 50px;
+    line-height: 60px;
+    text-align: center;
+  }
+}
+
+.header-photo {
+  width: 200px;
+  height: 200px;
+  border-radius: 105px;
+  border: 2px solid #FFFFFF;
+}
+
+.header-photo img {
+  width: 160px;
+  height: 160px;
+  border-radius: 80px;
   margin: 0 auto;
 }
 
-.circle-animate {
-  width: 170px;
-  height: 170px;
-  border: 1.3px dashed #D84361;
-  animation: borderRotation 5s infinite;
+@media (max-width: 768px) {
+  .header-photo {
+    width: 150px;
+    height: 150px;
+    border-radius: 105px;
+    border: 2px solid #FFFFFF;
+    margin: 0 auto;
+    margin-bottom: 30px;
+  }
+  
+  .header-photo img {
+    width: 120px;
+    height: 120px;
+    border-radius: 80px;
+    margin: 0 auto;
+  }
 }
 
-.profile-image {
-  width: 150px;
-  height: auto;
-  position: absolute;
-  top: 11.5px;
-  left: 11.5px;
+.header-social ul {
+  list-style: none;
+  font-size: 12px;
+  color: #FFFFFF;
+  margin-top: 20px;
+  float: right;
+}
+@media (max-width: 768px) {
+  .header-social ul {
+    width: 180px;
+    float: none;
+    margin: 0 auto;
+    margin-top: 10px;
+  }
 }
 
-/* Safari 4.0 - 8.0 */
-@-webkit-keyframes borderRotation {
-    0%   { border-color:#e5123c; -webkit-transform: rotate(7deg);}
-    25%  { border-color:#EBE808; -webkit-transform: rotate(7deg);}
-    50%  { border-color:#D84361; -webkit-transform: rotate(7deg);}
-    75%  { border-color:#13efbc; -webkit-transform: rotate(7deg);}
-    100% { border-color:#079bf7; -webkit-transform: rotate(7deg);}
-}
-
-/* Standard syntax */
-@keyframes borderRotation {
-    0%   { border-color:#e5123c; transform: rotate(120deg); -webkit-transform: rotate(120deg); -ms-transform: rotate(120deg); }
-    25%  { border-color:#EBE808;  transform: rotate(50deg); -webkit-transform: rotate(50deg); -ms-transform: rotate(50deg); }
-    50%  { border-color:#D84361; transform: rotate(100deg); -webkit-transform: rotate(100deg); -ms-transform: rotate(100deg); }
-    75%  { border-color:#13efbc; transform: rotate(80deg); -webkit-transform: rotate(80deg); -ms-transform: rotate(80deg); }
-    100% { border-color:#079bf7; transform: rotate(180deg); -webkit-transform: rotate(7deg); -ms-transform: rotate(180deg); }
-}
-
-.title {
-  margin: 25px 0 5px 0;
-  font-size: 24px;
-  font-weight: 600;
-  text-align: center;
-}
-
-.description {
-  margin: 10px 15px 5px 15px;
-  font-weight: 300;
-  color: #F0F0F0;
-  text-align: center;
-}
-
-.container-tabs {
-  margin: 25px 0;
-  text-align: center;
-}
-
-.tab {
-  text-align: center;
-  background-color: #261e2d;
-  color: #F0F0F0;
-  padding: 10px;
-  border-radius: 4px;
-  margin-right: 10px;
-  opacity: 0.5;
-  -webkit-transition: all 1s; /* Safari */
-  transition: all 1s;
-  cursor: pointer;
-}
-
-.tab.active {
-  opacity: 1;
-  -webkit-transition: all 1s; /* Safari */
-  transition: all 1s;
-}
-
-.container-social {
-  margin: 30px 0;
-  text-align: center;
-}
-
-.container-social a {
-  color: #13efbc;
-  font-size: 10px;
-  margin: 0 5px;
+.header-social ul li a {
+  color: #FFFFFF;
   opacity: 0.6;
   text-decoration: none;
-  -webkit-transition: all 1s; /* Safari */
-  transition: all 1s;
 }
 
-.container-social a:hover,
-.container-social a:active { 
+.header-social ul li a:hover {
+  color: #FFFFFF;
   opacity: 1;
-  -webkit-transition: all 1s; /* Safari */
-  transition: all 1s;
-  animation: multiColor 1.5s infinite;
 }
 
-/* Safari 4.0 - 8.0 */
-@-webkit-keyframes multiColor {
-    0%   { color:#e5123c; }
-    25%  { color:yellow; }
-    50%  { color:#D84361; }
-    75%  { color:#13efbc; }
-    100% { color:#079bf7; }
+.header ul li {
+  display: inline;
+  margin: 0 7px;
 }
 
-@keyframes multiColor {
-    0%   { color:#e5123c; }
-    25%  { color:yellow; }
-    50%  { color:#D84361; }
-    75%  { color:#13efbc; }
-    100% { color:#079bf7; }
+.body-content {
+  padding: 30px 0;
+}
+
+@media (max-width: 768px) { 
+  .body-content {
+    padding: 0;
+  }
+}
+
+.section-title {
+  font-size: 22px;
+  font-weight: 300;
+  padding: 30px 0;
+}
+.section-title i {
+  margin-right: 10px;
+}
+
+.horizontal-line {
+  border-left: 1px dashed #2f2f2f;
+  padding: 5px 0;
+}
+
+.horizontal-line .item {
+  margin: 20px 0 20px -10px;
+}
+
+.horizontal-line .item .circle {
+  margin: 0;
+}
+
+.horizontal-line .item .content {
+  margin-left: 30px;
+}
+
+.horizontal-line .item .content .date {
+  font-weight: 600;
+  margin-right: 5px;
+}
+
+.horizontal-line .item .content .title {
+  font-weight: 600;
+}
+
+.horizontal-line .item .content .detail {
+  margin-top: 20px;
+}
+.horizontal-line .item .content .detail p {
+  margin: 10px 0 10px 5px;
+}
+
+.graduation {
+  padding-right: 30px;
+}
+
+.experience {
+  padding-left: 30px;
+}
+
+@media (max-width: 768px) { 
+  .graduation {
+    padding-right: 0px;
+  }
+  
+  .experience {
+    padding-left: 0px;
+  }
+}  
+
+.circle {
+  width: 20px;
+  height: 20px;
+  background-color: #2f2f2f;
+  border-radius: 20px;
+  float: left;
+  margin: 0 2px;
+}
+
+.circle-o {
+  width: 14px;
+  height: 14px;
+  border: 3px solid #2f2f2f;
+  border-radius: 20px;
+  float: left;
+  margin: 0 2px;
+}
+
+.skill.item {
+  padding: 5px 0;
+}
+
+.projects .item {
+  width: 100px;
+  height: 100px;
+  background-color: #FFFFFF;
+  border: 1px solid #F0F0F0;
+  border-radius: 50px;
+  background-size: cover;
+  background-position: center;
+  margin: 0 10px;
+  cursor: pointer;
 }

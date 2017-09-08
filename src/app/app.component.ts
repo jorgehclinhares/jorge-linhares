@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Timeline, Experience, TechnologiesLeft, TechnologiesRight, Projects } from './data';
 
 @Component({
   selector: 'app-root',
@@ -7,10 +8,18 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
 
-  tabActive: string;
+  timeline: Array<any>;
+  experience: Array<any>;
+  technologiesLeft: Array<any>;
+  technologiesRight: Array<any>;
+  projects: Array<any>;
 
   constructor () {
-    this.tabActive = 'timeline';
+    this.timeline = Timeline;
+    this.experience = Experience;
+    this.technologiesLeft = TechnologiesLeft;
+    this.technologiesRight = TechnologiesRight;
+    this.projects = Projects;
   }
   
 }
