@@ -3,7 +3,7 @@ export const Timeline = [
     "title": "Curso de UX para Web Designers",
     "description": "em andamento pela UX Academy",
     "date": {
-      "init": new Date("07-04-2017"),
+      "init": new Date("07-04-2016"),
       "finish": new Date()
     }
   },
