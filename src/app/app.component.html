@@ -1,100 +1,16 @@
-<!-- Desktop and Tablet-->
-<div class="container-app uk-hidden-small height-100 uk-flex uk-flex-middle uk-width-1-1">
-  <div class="uk-width-1-1">
-    <div class="height-100 uk-grid uk-grid-collapse uk-container-center uk-width-large-8-10 uk-width-medium-8-10 uk-width-9-10">
+<app-header></app-header>
 
-      <div class="uk-width-large-2-6 uk-width-medium-2-6 uk-width-1-1 uk-flex uk-flex-middle">
-        <div class="uk-width-1-1">
-          <div class="container-profile">
-            <div class="circle-animate uk-border-circle"></div>
-            <img src="/assets/img/profile.png" class="profile-image uk-align-center uk-border-circle" data-uk-tooltip title="Oi!"/>
-          </div>
-          <div class="title">
-            Jorge Linhares
-          </div>
-          <div class="description">
-            Master student in Software Engineering from the University Federal of Pernambuco (UFPE) and Web Fullstack Developer in Viitra.
-          </div>
-          <div class="container-social uk-width-1-1">
-            <a href="https://medium.com/@jorgelinhares" target="_blank" data-uk-tooltip title="Medium">
-              <i class="fa fa-medium icons-sociais fa-2x"></i>
-            </a>
-            <a href="https://br.linkedin.com/in/jorge-linhares-a6a0a485" target="_blank" data-uk-tooltip title="Linkedin">
-              <i class="fa fa-linkedin-square icons-sociais fa-2x"></i>
-            </a>
-            <a href="https://github.com/jorgehclinhares" target="_blank" data-uk-tooltip title="Github">
-              <i class="fa fa-github icons-sociais fa-2x"></i>
-            </a>
-            <a href="https://www.facebook.com/jorgehclinhares" target="_blank" data-uk-tooltip title="Facebook">
-              <i class="fa fa-facebook icons-sociais fa-2x"></i>
-            </a>
-            <a href="https://twitter.com/jorgehclinhares" target="_blank" data-uk-tooltip title="Twitter">
-              <i class="fa fa-twitter icons-sociais fa-2x"></i>
-            </a>
-          </div>
-          <div class="container-tabs uk-width-1-1 uk-flex uk-flex-middle">
-            <div class="uk-width-1-1">
-              <span class="tab" [ngClass]="{'active' : (tabActive == 'timeline')}" (click)="tabActive = 'timeline'">Timeline</span>
-              <span class="tab" [ngClass]="{'active' : (tabActive == 'projects')}" (click)="tabActive = 'projects'">Projects</span>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="uk-width-large-4-6 uk-width-medium-4-6 uk-width-1-1">
-    
-        <div class="height-100 uk-flex uk-flex-middle uk-width-1-1">
-          <app-timeline *ngIf="tabActive === 'timeline'" class="uk-width-1-1"></app-timeline>
-          <app-projects *ngIf="tabActive === 'projects'" class="uk-width-1-1"></app-projects>
-        </div>
-
-      </div>
+<div class="body-content uk-width-1-1">
+  <div class="uk-grid uk-grid-collapse uk-container-center uk-width-large-4-6 uk-width-medium-5-6 uk-width-4-5 height-100">
+    <div class="graduation uk-width-large-1-2 uk-width-medium-1-2 uk-width-1-1">
+      <app-timeline></app-timeline>
+    </div>
+    <div class="experience uk-width-large-1-2 uk-width-medium-1-2 uk-width-1-1">
+      <app-experience></app-experience>
     </div>
   </div>
 </div>
 
-<!-- Mobile -->
-<div class="container-app uk-visible-small height-100 uk-width-1-1">
-  <div class="uk-grid uk-grid-collapse uk-container-center uk-width-large-8-10 uk-width-medium-8-10 uk-width-9-10">
-    <div class="uk-width-large-2-6 uk-width-medium-2-6 uk-width-1-1">
-      <div class="container-profile uk-align-center">
-        <div class="circle-animate uk-border-circle"></div>
-        <img src="/assets/img/profile.png" class="profile-image uk-align-center uk-border-circle"/>
-      </div>
-      <div class="title">
-        Jorge Linhares
-      </div>
-      <div class="description">
-        Master student in Software Engineering from the University Federal of Pernambuco (UFPE) and Web Fullstack Developer in Viitra.
-      </div>
-      <div class="container-social uk-width-1-1">
-        <a href="https://medium.com/@jorgelinhares" target="_blank" data-uk-tooltip title="Medium">
-          <i class="fa fa-medium icons-sociais fa-2x"></i>
-        </a>
-        <a href="https://br.linkedin.com/in/jorge-linhares-a6a0a485" target="_blank" data-uk-tooltip title="Linkedin">
-          <i class="fa fa-linkedin-square icons-sociais fa-2x"></i>
-        </a>
-        <a href="https://github.com/jorgehclinhares" target="_blank" data-uk-tooltip title="Github">
-          <i class="fa fa-github icons-sociais fa-2x"></i>
-        </a>
-        <a href="https://www.facebook.com/jorgehclinhares" target="_blank" data-uk-tooltip title="Facebook">
-          <i class="fa fa-facebook icons-sociais fa-2x"></i>
-        </a>
-        <a href="https://twitter.com/jorgehclinhares" target="_blank" data-uk-tooltip title="Twitter">
-          <i class="fa fa-twitter icons-sociais fa-2x"></i>
-        </a>
-      </div>
-      <div class="container-tabs uk-width-1-1 uk-flex uk-flex-middle">
-        <div class="uk-width-1-1">
-          <span class="tab" [ngClass]="{'active' : (tabActive == 'timeline')}" (click)="tabActive = 'timeline'">Timeline</span>
-          <span class="tab" [ngClass]="{'active' : (tabActive == 'projects')}" (click)="tabActive = 'projects'">Projects</span>
-        </div>
-      </div>
-    </div>
-    <div class="uk-width-large-4-6 uk-width-medium-4-6 uk-width-1-1">
-      <div class="height-100 uk-flex uk-flex-middle uk-width-1-1">
-        <app-timeline *ngIf="tabActive === 'timeline'"></app-timeline>
-        <app-projects *ngIf="tabActive === 'projects'"></app-projects>
-      </div>
-    </div>
-  </div>
-</div>
+<app-technology></app-technology>
+
+<app-projects></app-projects>

@@ -4,14 +4,24 @@ import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
-import { ProjectsComponent } from './projects/projects.component';
+import { ExperienceComponent } from './experience/experience.component';
 import { TimelineComponent } from './timeline/timeline.component';
+import { TechnologyComponent } from './technology/technology.component';
+import { HeaderComponent } from './header/header.component';
+import { ProjectsComponent } from './projects/projects.component';
+// import { ProjectsComponent } from './projects/projects.component';
+// import { TimelineComponent } from './timeline/timeline.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    ProjectsComponent,
-    TimelineComponent
+    ExperienceComponent,
+    TimelineComponent,
+    TechnologyComponent,
+    HeaderComponent,
+    ProjectsComponent
+    // ProjectsComponent,
+    // TimelineComponent
   ],
   imports: [
     BrowserModule,
