@@ -1,135 +1,16 @@
-<div class="header uk-wdith-1-1">
-  <div class="uk-grid uk-grid-collapse uk-container-center uk-width-large-3-6 uk-width-medium-4-6 uk-width-2-3 height-100">
-    <div class="uk-width-1-1 height-100 uk-flex uk-flex-middle">
-       <div class="uk-grid uk-grid-collapse uk-width-1-1">
-         <div class="uk-width-large-1-2 uk-width-medium-1-2 uk-width-1-1">
-           <div class="header-photo uk-flex uk-flex-middle">
-             <img src="/assets/img/profile.png" />
-           </div>
-         </div>
-         <div class="uk-width-large-1-2 uk-width-medium-1-2 uk-width-1-1 uk-flex uk-flex-middle">
-           <div class="uk-width-1-1">
-              <div class="header-title">
-                <p class="name">Jorge</p>
-                <p class="lastname">Linhares</p>
-              </div>
-              <div class="header-social">
-                <ul>
-                  <li>
-                    <a href="https://medium.com/@jorgelinhares" target="_blank" data-uk-tooltip title="Medium">
-                      <i class="fa fa-medium icons-sociais fa-2x"></i>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="https://br.linkedin.com/in/jorge-linhares-a6a0a485" target="_blank" data-uk-tooltip title="Linkedin">
-                      <i class="fa fa-linkedin-square icons-sociais fa-2x"></i>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="https://github.com/jorgehclinhares" target="_blank" data-uk-tooltip title="Github">
-                      <i class="fa fa-github icons-sociais fa-2x"></i>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="https://www.facebook.com/jorgehclinhares" target="_blank" data-uk-tooltip title="Facebook">
-                      <i class="fa fa-facebook icons-sociais fa-2x"></i>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="https://twitter.com/jorgehclinhares" target="_blank" data-uk-tooltip title="Twitter">
-                      <i class="fa fa-twitter icons-sociais fa-2x"></i>
-                    </a>
-                  </li>
-                </ul>
-              </div>
-           </div>
-         </div>
-       </div>
-    </div>
-  </div>
-</div>
+<app-header></app-header>
 
-<div class="body-content uk-wdith-1-1">
+<div class="body-content uk-width-1-1">
   <div class="uk-grid uk-grid-collapse uk-container-center uk-width-large-4-6 uk-width-medium-5-6 uk-width-4-5 height-100">
-    <!-- Formacao -->
     <div class="graduation uk-width-large-1-2 uk-width-medium-1-2 uk-width-1-1">
-      <div class="section-title">
-        <i class="fa fa-graduation-cap" aria-hidden="true"></i> Formação
-      </div>
-      <div class="horizontal-line">
-        <div class="item" *ngFor="let time of timeline">
-          <div class="circle"></div>
-          <div class="content">
-            <span class="date">{{ time.date | date: 'MM/yyyy' }} | </span>
-            <span class="title">{{ time.title }}</span>
-            {{ time.description }}
-          </div>
-        </div>
-      </div>
+      <app-timeline></app-timeline>
     </div>
-    <!-- Experiencia -->
     <div class="experience uk-width-large-1-2 uk-width-medium-1-2 uk-width-1-1">
-      <div class="section-title">
-        <i class="fa fa-file-code-o" aria-hidden="true"></i> Experiência
-      </div>
-      <div class="horizontal-line">
-        <div class="item" *ngFor="let xp of experience">
-          <div class="circle"></div>
-          <div class="content">
-            <span class="date">{{ xp.date.init | date: 'MM/yyyy' }} / {{ xp.date.finish | date: 'MM/yyyy' }} | </span>
-            <span class="title">{{ xp.title }}</span>
-            <div class="detail uk-width-1-1" *ngFor="let item of xp.item">
-              <p class="title">{{ item.title }}</p>
-              <p *ngFor="let desc of item.description">{{ desc }}</p>
-            </div>
-          </div>
-        </div>
-      </div>
+      <app-experience></app-experience>
     </div>
   </div>
 </div>
 
-<div class="body-content uk-wdith-1-1">
-  <div class="uk-grid uk-grid-collapse uk-container-center uk-width-large-4-6 uk-width-medium-5-6 uk-width-4-5 height-100">
-    <!-- Linguagens e Tecnologias -->
-    <div class="uk-width-1-1">
-      <div class="section-title">
-        <i class="fa fa-code" aria-hidden="true"></i> Linguagens e Tecnologias
-      </div>
-    </div>
-    <div class="uk-width-large-1-2 uk-width-medium-1-2 uk-width-1-1">
-      <div class="skill item uk-grid uk-grid-collapse" *ngFor="let tech of technologiesLeft">
-        <div class="uk-width-3-5">
-          {{ tech.title }}
-        </div>
-        <div class="uk-width-2-5">
-          <div class="{{ style }}" *ngFor="let style of tech.level"></div>
-        </div>
-      </div>
-    </div>
-    <div class="uk-width-large-1-2 uk-width-medium-1-2 uk-width-1-1">
-      <div class="skill item uk-grid uk-grid-collapse" *ngFor="let tech of technologiesRight">
-        <div class="uk-width-3-5">
-          {{ tech.title }}
-        </div>
-        <div class="uk-width-2-5">
-          <div class="{{ style }}" *ngFor="let style of tech.level"></div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
+<app-technology></app-technology>
 
-<div class="body-content uk-wdith-1-1">
-    <div class="projects uk-grid uk-grid-collapse uk-container-center uk-width-large-4-6 uk-width-medium-5-6 uk-width-4-5 height-100">
-    <!-- Linguagens e Tecnologias -->
-    <div class="uk-width-1-1">
-      <div class="section-title">
-        <i class="fa fa-code" aria-hidden="true"></i> Linguagens e Tecnologias
-      </div>
-    </div>
-    <a href="{{ project.url }}" target="_blank" class="item uk-width-1-4" *ngFor="let project of projects" data-uk-tooltip title="{{ project.title }}"
-      [style.background-image]="'url('+ project.image +')'">
-    </a>
-  </div>
-</div>
+<app-projects></app-projects>

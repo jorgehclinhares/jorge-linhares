@@ -1,26 +1,17 @@
-import { Component } from '@angular/core';
-import { Timeline } from '../timeline';
-
-import * as moment from 'moment';
-import 'moment/min/locales.min'
+import { Component, OnInit } from '@angular/core';
+import { Timeline } from '../data';
 
 @Component({
   selector: 'app-timeline',
   templateUrl: './timeline.component.html',
   styleUrls: ['./timeline.component.css']
 })
-export class TimelineComponent {
+export class TimelineComponent implements OnInit {
 
-  projects: Array<any>;
+  timeline: Array<any>;
 
-  constructor () {
-
-    for (let i in Timeline) {
-     Timeline[i]['showDate'] = moment(Timeline[i].date).format("ll");
-    }
-    
-    this.projects = Timeline;
-
+  ngOnInit() {
+    this.timeline = Timeline;
   }
 
 }

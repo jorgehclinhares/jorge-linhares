@@ -1,38 +1,42 @@
 export const Timeline = [
   {
-    "title": "Bachelor in Information Systems",
-    "description": "in University Federal of Pernambuco - UFPE",
-    "date": new Date("02-10-2017")
+    "title": "Curso de UX para Web Designers",
+    "description": "em andamento pela UX Academy",
+    "date": {
+      "init": new Date("07-04-2017"),
+      "finish": new Date()
+    }
   },
   {
-    "title": "Software Engineering Discipline Monitor",
-    "description": "by the course of Information Systems in UFPE",
-    "date": new Date("06-01-2016")
+    "title": "Bacharel em Sistemas de Informação",
+    "description": "pela Universidade Federal de Pernambuco",
+    "date": {
+      "init": new Date("07-04-2012"),
+      "finish": new Date("07-04-2016")
+    }
   },
   {
-    "title": "Software Engineering Discipline Monitor",
-    "description": "by the course of Information Systems in UFPE",
-    "date": new Date("06-01-2015")
+    "title": "Monitor da disciplina de Lógica para Computação",
+    "description": "pelo curso de Sistemas de Informação na UFPE",
+    "date": {
+      "init": new Date("07-04-2014"),
+      "finish": new Date("07-04-2015")
+    }
   },
   {
-    "title": "Configuration Management Fundamentals Course",
-    "description": "by C.E.S.A.R EDU.",
-    "date": new Date("04-05-2015")
+    "title": "Curso de Fundamentos da Gerência da Configuração",
+    "description": "pelo C.E.S.A.R EDU",
+    "date": {
+      "finish": new Date("07-04-2015")
+    }
   },
   {
-    "title": "Software Engineering Discipline Monitor",
-    "description": "by the course of Information Systems in UFPE",
-    "date": new Date("02-01-2015")
-  },
-  {
-    "title": "Software Engineering Discipline Monitor",
-    "description": "by the course of Information Systems in UFPE",
-    "date": new Date("06-01-2014")
-  },
-  {
-    "title": "Monitor of the discipline of Computer Logic",
-    "description": "by the course of Information Systems in UFPE",
-    "date": new Date("02-01-2014")
+    "title": "Monitor da disciplina de Engenharia de Software",
+    "description": "pelo curso de Sistemas de Informação na UFPE",
+    "date": {
+      "init": new Date("07-04-2014"),
+      "finish": new Date("07-04-2016")
+    }
   }
 ];
 
@@ -126,16 +130,22 @@ export const TechnologiesRight = [
 
 export const Projects = [
   {
-    "title": "Run Metric",
+    "title": "Noivei.com",
     "description" : "Descrição do app",
-    "image": "/assets/img/projects/runmetric.png",
-    "url": "https://github.com/jorgehclinhares/run-metric"
+    "image": "/assets/img/projects/noivei.png",
+    "url": "http://noivei.com/"
   },
   {
     "title": "UFPE Mobile",
     "description" : "Descrição do app",
     "image": "/assets/img/projects/ufpemobile.png",
     "url": "https://play.google.com/store/apps/details?id=br.ufpe.mobile&hl=pt_BR"
+  },
+  {
+    "title": "Run Metric",
+    "description" : "Descrição do app",
+    "image": "/assets/img/projects/runmetric.png",
+    "url": "https://github.com/jorgehclinhares/run-metric"
   },
   {
     "title": "Logo Portal do Estudante",
