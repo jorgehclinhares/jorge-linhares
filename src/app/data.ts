@@ -3,39 +3,39 @@ export const Timeline = [
     "title": "Curso de UX para Web Designers",
     "description": "em andamento pela UX Academy",
     "date": {
-      "init": new Date("07-04-2016"),
-      "finish": new Date()
+      "init": 2016,
+      "finish": "*"
     }
   },
   {
     "title": "Bacharel em Sistemas de Informação",
     "description": "pela Universidade Federal de Pernambuco",
     "date": {
-      "init": new Date("07-04-2012"),
-      "finish": new Date("07-04-2016")
+      "init": 2012,
+      "finish": 2016
     }
   },
   {
     "title": "Monitor da disciplina de Lógica para Computação",
     "description": "pelo curso de Sistemas de Informação na UFPE",
     "date": {
-      "init": new Date("07-04-2014"),
-      "finish": new Date("07-04-2015")
+      "init": 2014,
+      "finish": 2015
     }
   },
   {
     "title": "Curso de Fundamentos da Gerência da Configuração",
     "description": "pelo C.E.S.A.R EDU",
     "date": {
-      "finish": new Date("07-04-2015")
+      "finish": 2015
     }
   },
   {
     "title": "Monitor da disciplina de Engenharia de Software",
     "description": "pelo curso de Sistemas de Informação na UFPE",
     "date": {
-      "init": new Date("07-04-2014"),
-      "finish": new Date("07-04-2016")
+      "init": 2014,
+      "finish": 2016
     }
   }
 ];
@@ -44,8 +44,8 @@ export const Experience = [
   {
     "title": "Viitra Inovações",
     "date": {
-      "init": new Date("07-04-2015"),
-      "finish": new Date()
+      "init": 2015,
+      "finish": "*"
     },
     "item": [
       {
@@ -67,8 +67,8 @@ export const Experience = [
   {
     "title": "Freelancer pela empresa Gabriel Routulo",
     "date": {
-      "init": new Date("06-11-2011"),
-      "finish": new Date("12-06-2012")
+      "init": 2011,
+      "finish": 2012
     },
     "item": [
       {
