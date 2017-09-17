@@ -5,7 +5,7 @@
   <div class="item" *ngFor="let xp of experience">
     <div class="circle"></div>
     <div class="content">
-      <span class="date">{{ xp.date.init | date: 'MM/yyyy' }} / {{ xp.date.finish | date: 'MM/yyyy' }} | </span>
+      <span class="date">{{ xp?.date?.init }} / {{ xp?.date?.finish }} | </span>
       <span class="title">{{ xp.title }}</span>
       <div class="detail uk-width-1-1" *ngFor="let item of xp.item">
         <p class="title">{{ item.title }}</p>
