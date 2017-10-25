@@ -10,7 +10,6 @@ module.exports = {
     'dist/**.ttf',
     'dist/**.woff',
     'dist/**.svg',
-    'dist/**.eot',
-    'dist/**.json'
+    'dist/**.eot'
   ]
 };
