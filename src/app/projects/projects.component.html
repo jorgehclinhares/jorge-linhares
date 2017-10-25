@@ -6,7 +6,7 @@
         <i class="fa fa-code" aria-hidden="true"></i> Projectos Recentes
       </div>
     </div>
-    <a href="{{ project.url }}" target="_blank" class="item uk-width-1-4" *ngFor="let project of projects" data-uk-tooltip title="{{ project.title }}"
+    <a href="{{ project.url }}" target="_blank" rel="noopener" class="item uk-width-1-4" *ngFor="let project of projects" data-uk-tooltip title="{{ project.title }}"
       [style.background-image]="'url('+ project.image +')'">
     </a>
   </div>
