@@ -1,8 +1,8 @@
 {
   "name": "Jorge Linhares",
   "short_name": "J. Linhares",
-  "theme_color": "#2f2f2f",
-  "background_color": "#2f2f2f",
+  "theme_color": "#FFFFFF",
+  "background_color": "#FFFFFF",
   "display": "standalone",
   "start_url": "/",
   "icons": [
