@@ -3,11 +3,19 @@
     <!-- Linguagens e Tecnologias -->
     <div class="uk-width-1-1">
       <div class="section-title">
-        <i class="fa fa-code" aria-hidden="true"></i> Projectos Recentes
+        <i class="fa fa-code" aria-hidden="true"></i> Projetos Recentes
       </div>
     </div>
-    <a href="{{ project.url }}" target="_blank" rel="noopener" class="item uk-width-1-4" *ngFor="let project of projects" data-uk-tooltip title="{{ project.title }}"
-      [style.background-image]="'url('+ project.image +')'">
-    </a>
+    <div class="uk-grid uk-width-1-1">
+      <div class="item uk-width-large-1-3 uk-width-medium-1-3 uk-width-1-1" *ngFor="let project of projects">
+        <img [src]="project?.image" alt="{{ project?.title }}"  class="uk-align-center"/>
+        <p>
+          <b>{{ project?.title }}</b> {{ project?.description }} 
+          <a *ngIf="project?.status === 'open'" href="{{ project?.url }}">Quero saber mais!</a>
+          <a *ngIf="project?.status === 'restricted'" href="{{ project?.url }}">Acessar</a>
+          <span *ngIf="project?.status === 'blocked'">Infelizmente este projeto possui acesso restrito no momento.</span>
+        </p>
+      </div>
+    </div>
   </div>
 </div>

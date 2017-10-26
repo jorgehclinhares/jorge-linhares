@@ -1,11 +1,14 @@
-.projects .item {
-  width: 100px;
-  height: 100px;
-  background-color: #FFFFFF;
-  border: 1px solid #F0F0F0;
-  border-radius: 50px;
-  background-size: cover;
-  background-position: center;
-  margin: 10px;
+.projects .item img {
+  border-radius: 7px;
   cursor: pointer;
+}
+
+.projects .item p {
+  padding: 10px 0 25px 0;
+  text-align: justify;
+}
+
+.projects .item a {
+  color: #2f2f2f;
+  font-weight: bold;
 }

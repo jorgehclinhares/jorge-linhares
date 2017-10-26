@@ -140,32 +140,29 @@ export const TechnologiesRight = [
 export const Projects = [
   {
     "title": "Jorge Linhares",
+    "description": "é um Progressive Web App e se você estiver acessando-o pelo seu smartphone, muito provavelmente poderá adicioná-lo a sua tela inicial ou na bandeja de aplicativos, a vantagem disso está no acesso offline de todas as informações aqui contidas e que foram devidamente cacheadas.",
     "image": "/assets/img/projects/jorgelinhares.png",
-    "url": "https://github.com/jorgehclinhares/jorgelinhares"
+    "url": "https://goo.gl/A9FZzk",
+    "status": "open"
   },
   {
     "title": "Noivei.com",
+    "description": "é site de casamentos em forma de uma rede social que permite o compartilhamento e interação dos noivos e seus convidados.",
     "image": "/assets/img/projects/noivei.png",
-    "url": "https://noivei.com/"
+    "status": "blocked"
   },
   {
     "title": "Sistema de Estágio UFPE",
+    "description": "é um sistema web que simplifica e automatiza todas as etapas de um processo de estágio, da publicação da oferta de estágio aos preenchimentos dos relatórios de estágio, beneficiando estudantes, professores e empresas.",
     "image": "/assets/img/projects/estagioufpe.png",
-    "url": "https://estagio.ufpe.br/login"
-  },
-  {
-    "title": "UFPE Mobile",
-    "image": "/assets/img/projects/ufpemobile.png",
-    "url": "https://play.google.com/store/apps/details?id=br.ufpe.mobile&hl=pt_BR"
+    "url": "https://goo.gl/1ECsYU",
+    "status": "restricted"
   },
   {
     "title": "Run Metric",
+    "description": "é um aplicativo android desenvolvido sem maiores ambições, a partir de uma série de cálculos matemáticos o app te ajuda a saber a saber quantos quilômetros você percorreu e qual foi o seu gasto calórico.",
     "image": "/assets/img/projects/runmetric.png",
-    "url": "https://github.com/jorgehclinhares/run-metric"
-  },
-  {
-    "title": "Logo Portal do Estudante",
-    "image": "/assets/img/projects/portalestudante.png",
-    "url": "http://estudante.ufpe.br"
+    "url": "https://goo.gl/4TfouV",
+    "status": "open"
   }
 ];
