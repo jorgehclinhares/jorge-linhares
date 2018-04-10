@@ -1,10 +1,25 @@
 export const Timeline = [
   {
+    "title": "Mestrando em Ciência da Computação pela",
+    "description": "Universidade Federal de Pernambuco",
+    "date": {
+      "init": 2017,
+      "finish": "*"
+    }
+  },
+  {
     "title": "Curso de UX para Web Designers",
-    "description": "em andamento pela UX Academy",
+    "description": "pela UX Academy",
     "date": {
       "init": 2016,
-      "finish": "*"
+      "finish": 2017
+    }
+  },
+  {
+    "title": "Inglês Nível II",
+    "description": "pela Prolinfo UPE",
+    "date": {
+      "finish": 2017
     }
   },
   {
@@ -12,6 +27,14 @@ export const Timeline = [
     "description": "pela Universidade Federal de Pernambuco",
     "date": {
       "init": 2012,
+      "finish": 2016
+    }
+  },
+  {
+    "title": "Monitor da disciplina de Engenharia de Software",
+    "description": "pelo curso de Sistemas de Informação na UFPE",
+    "date": {
+      "init": 2014,
       "finish": 2016
     }
   },
@@ -28,14 +51,6 @@ export const Timeline = [
     "description": "pelo C.E.S.A.R EDU",
     "date": {
       "finish": 2015
-    }
-  },
-  {
-    "title": "Monitor da disciplina de Engenharia de Software",
-    "description": "pelo curso de Sistemas de Informação na UFPE",
-    "date": {
-      "init": 2014,
-      "finish": 2016
     }
   }
 ];
@@ -85,36 +100,36 @@ export const Experience = [
 
 export const TechnologiesLeft = [
   {
+    "title": "Angular 5",
+    "level" : ['circle', 'circle', 'circle', 'circle', 'circle-o']
+  },
+  {
+    "title": "AngularJs",
+    "level" : ['circle', 'circle', 'circle', 'circle', 'circle-o']
+  },
+  {
     "title": "PHP/Slim Framework",
     "level" : ['circle', 'circle', 'circle', 'circle-o', 'circle-o']
-  },
-  {
-    "title": "Angular JS 1x",
-    "level" : ['circle', 'circle', 'circle', 'circle', 'circle-o']
-  },
-  {
-    "title": "Angular 2x/4x",
-    "level" : ['circle', 'circle', 'circle', 'circle', 'circle-o']
   },
   {
     "title": "NodeJS/Express",
     "level" : ['circle', 'circle', 'circle', 'circle', 'circle-o']
   },
   {
-    "title": "Appcelerator Mobile",
-    "level" : ['circle', 'circle', 'circle', 'circle', 'circle-o']
+    "title": "Caching/Redis",
+    "level" : ['circle', 'circle', 'circle', 'circle-o', 'circle-o']
   },
   {
-    "title": "JavaScript Standard Style",
+    "title": "JAVA",
+    "level" : ['circle', 'circle', 'circle', 'circle-o', 'circle-o']
+  },
+  {
+    "title": "HTML5/CSS3",
     "level" : ['circle', 'circle', 'circle', 'circle', 'circle-o']
   }
 ];
 
 export const TechnologiesRight = [
-  {
-    "title": "HTML5/CSS3",
-    "level" : ['circle', 'circle', 'circle', 'circle', 'circle-o']
-  },
   {
     "title": "SQL/MySQL",
     "level" : ['circle', 'circle', 'circle', 'circle', 'circle-o']
@@ -134,13 +149,17 @@ export const TechnologiesRight = [
   {
     "title": "Caching/Redis",
     "level" : ['circle', 'circle', 'circle', 'circle', 'circle-o']
+  },
+  {
+    "title": "Style Coding/JavaScript Standard",
+    "level" : ['circle', 'circle', 'circle', 'circle', 'circle-o']
   }
 ];
 
 export const Projects = [
   {
     "title": "Jorge Linhares",
-    "description": "é um Progressive Web App e se você estiver acessando-o pelo seu smartphone, muito provavelmente poderá adicioná-lo a sua tela inicial ou na bandeja de aplicativos, a vantagem disso está no acesso offline de todas as informações aqui contidas e que foram devidamente cacheadas.",
+    "description": "é um Progressive Web App e se você estiver acessando-o pelo seu smartphone, muito provavelmente poderá adicioná-lo a sua tela inicial ou na bandeja de aplicativos, a vantagem disso está no acesso offline de todas as informações aqui contidas.",
     "image": "/assets/img/projects/jorgelinhares.png",
     "url": "https://goo.gl/A9FZzk",
     "status": "open"
@@ -163,6 +182,13 @@ export const Projects = [
     "description": "é um aplicativo android desenvolvido sem maiores ambições, a partir de uma série de cálculos matemáticos o app te ajuda a saber a saber quantos quilômetros você percorreu e qual foi o seu gasto calórico.",
     "image": "/assets/img/projects/runmetric.png",
     "url": "https://goo.gl/4TfouV",
+    "status": "open"
+  },
+  {
+    "title": "UsainBots",
+    "description": "é uma API Rest desenvolvida em Node.js utilizando Processamento de Linguagem Natural para o desenvolvimento de chatbots inteligentes e capazes de extrair conhecimento por meio de páginas web e interagir com o seres humanos por meio de um terminal de chat.",
+    "image": "/assets/img/projects/github.png",
+    "url": "https://goo.gl/D4n9er",
     "status": "open"
   }
 ];

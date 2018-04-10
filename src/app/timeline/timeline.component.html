@@ -5,8 +5,9 @@
   <div class="item" *ngFor="let time of timeline">
     <div class="circle"></div>
     <div class="content">
-      <!-- <span *ngIf="!time?.date?.init && time?.date?.finish" class="date">{{ time?.date?.finish }} | </span> -->
-      <!-- <span *ngIf="time?.date?.init && time?.date?.finish" class="date">{{ time.date.init }} / {{ time.date.finish }} | </span> -->
+      <span *ngIf="time?.date?.init">{{ time.date.init }} /</span>
+      <span *ngIf="time?.date?.finish" class="date">{{ time.date.finish }}</span>
+      <span> | </span>
       <span class="title">{{ time.title }}</span>
       {{ time.description }}
     </div>

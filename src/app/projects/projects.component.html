@@ -13,7 +13,7 @@
           <b>{{ project?.title }}</b> {{ project?.description }} 
           <a *ngIf="project?.status === 'open'" href="{{ project?.url }}">Quero saber mais!</a>
           <a *ngIf="project?.status === 'restricted'" href="{{ project?.url }}">Acessar</a>
-          <span *ngIf="project?.status === 'blocked'">Infelizmente este projeto possui acesso restrito no momento.</span>
+          <span *ngIf="project?.status === 'blocked'">(Infelizmente este projeto possui acesso restrito no momento).</span>
         </p>
       </div>
     </div>
