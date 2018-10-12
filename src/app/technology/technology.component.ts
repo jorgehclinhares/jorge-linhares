@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { TechnologiesLeft, TechnologiesRight } from '../data';
 
 @Component({
@@ -6,14 +6,9 @@ import { TechnologiesLeft, TechnologiesRight } from '../data';
   templateUrl: './technology.component.html',
   styleUrls: ['./technology.component.css']
 })
-export class TechnologyComponent implements OnInit {
+export class TechnologyComponent {
 
-  technologiesLeft: Array<any>;
-  technologiesRight: Array<any>;
-
-  ngOnInit() {
-    this.technologiesLeft = TechnologiesLeft;
-    this.technologiesRight = TechnologiesRight;
-  }
+  @Input() technologiesLeft: Array<any>;
+  @Input() technologiesRight: Array<any>;
 
 }

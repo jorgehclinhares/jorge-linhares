@@ -6,6 +6,7 @@ html, body {
   height: 100%;
   font-family: 'Open Sans', sans-serif;
   overflow: auto;
+  background: red;
 }
 
 body {

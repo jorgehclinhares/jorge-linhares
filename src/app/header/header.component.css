@@ -1,20 +1,13 @@
 .header {
   background-image: url('/assets/img/michal-parzuchowski-37537.jpg');
-  height: 600px;
+  height: 100%;
   background-size: cover;
   background-position: center;
-}
-@media (max-width: 768px) { 
-  .header {
-    background-image: url('/assets/img/michal-parzuchowski-37537.jpg');
-    height: 400px;
-    background-size: cover;
-    background-position: center;
-  }
 }
 
 .header-title {
   color: #FFFFFF;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
   text-align: right;
 }
 
@@ -105,10 +98,11 @@
   color: #FFFFFF;
   opacity: 0.6;
   text-decoration: none;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
 }
 
 .header-social ul li a:hover {
-  color: #FFFFFF;
+  color: #77bfed;
   opacity: 1;
 }
 
