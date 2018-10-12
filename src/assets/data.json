@@ -99,7 +99,7 @@
   ],
   "technologiesLeft": [
     {
-      "title": "Angular 5",
+      "title": "Angular",
       "level": [
         "circle",
         "circle",
@@ -129,6 +129,16 @@
       ]
     },
     {
+      "title": "Laravel/Lumen",
+      "level": [
+        "circle",
+        "circle",
+        "circle",
+        "circle-o",
+        "circle-o"
+      ]
+    },
+    {
       "title": "NodeJS/Express",
       "level": [
         "circle",
@@ -143,7 +153,17 @@
       "level": [
         "circle",
         "circle",
+        "circle-o",
+        "circle-o",
+        "circle-o"
+      ]
+    },
+    {
+      "title": "Eloquent ORM",
+      "level": [
         "circle",
+        "circle",
+        "circle-o",
         "circle-o",
         "circle-o"
       ]
@@ -157,7 +177,9 @@
         "circle-o",
         "circle-o"
       ]
-    },
+    }
+  ],
+  "technologiesRight": [
     {
       "title": "HTML5/CSS3",
       "level": [
@@ -167,16 +189,14 @@
         "circle",
         "circle-o"
       ]
-    }
-  ],
-  "technologiesRight": [
+    },
     {
       "title": "SQL/MySQL",
       "level": [
         "circle",
         "circle",
         "circle",
-        "circle",
+        "circle-o",
         "circle-o"
       ]
     },
@@ -186,7 +206,7 @@
         "circle",
         "circle",
         "circle",
-        "circle",
+        "circle-o",
         "circle-o"
       ]
     },
@@ -201,7 +221,7 @@
       ]
     },
     {
-      "title": "Ionic 2",
+      "title": "Ionic Framework",
       "level": [
         "circle",
         "circle",
@@ -211,7 +231,7 @@
       ]
     },
     {
-      "title": "Caching/Redis",
+      "title": "JavaScript Standard",
       "level": [
         "circle",
         "circle",
@@ -221,12 +241,22 @@
       ]
     },
     {
-      "title": "Style Coding/JavaScript Standard",
+      "title": "Apache",
       "level": [
         "circle",
         "circle",
+        "circle-o",
+        "circle-o",
+        "circle-o"
+      ]
+    },
+    {
+      "title": "Nginx",
+      "level": [
         "circle",
         "circle",
+        "circle-o",
+        "circle-o",
         "circle-o"
       ]
     }

@@ -20,17 +20,16 @@ export class AppComponent implements OnDestroy {
   constructor(
     private http: HttpClient
   ) {
-
-    this.dataSubscription = this.http.get('assets/data.json')
-      .subscribe(
-        res => {
-          this.timeline = res['timeline'];
-          this.experience = res['experience'];
-          this.technologiesLeft = res['technologiesLeft'];
-          this.technologiesRight = res['technologiesRight'];
-          this.projects = res['projects'];
-        }
-      );
+    // this.dataSubscription = this.http.get('assets/data.json')
+    //   .subscribe(
+    //     res => {
+    //       this.timeline = res['timeline'];
+    //       this.experience = res['experience'];
+    //       this.technologiesLeft = res['technologiesLeft'];
+    //       this.technologiesRight = res['technologiesRight'];
+    //       this.projects = res['projects'];
+    //     }
+    //   );
   }
 
   ngOnDestroy() {

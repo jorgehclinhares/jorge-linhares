@@ -1,16 +1,8 @@
 .header {
   background-image: url('/assets/img/michal-parzuchowski-37537.jpg');
-  height: 500px;
+  height: 100%;
   background-size: cover;
   background-position: center;
-}
-@media (max-width: 768px) { 
-  .header {
-    background-image: url('/assets/img/michal-parzuchowski-37537.jpg');
-    height: 400px;
-    background-size: cover;
-    background-position: center;
-  }
 }
 
 .header-title {
@@ -110,7 +102,7 @@
 }
 
 .header-social ul li a:hover {
-  color: #FFFFFF;
+  color: #77bfed;
   opacity: 1;
 }
 
