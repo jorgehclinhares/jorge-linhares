@@ -1,5 +1,4 @@
 import { Component, OnDestroy } from '@angular/core';
-import { Timeline, Experience, TechnologiesLeft, TechnologiesRight, Projects } from './data';
 import { HttpClient } from '@angular/common/http';
 import { Subscription } from 'rxjs';
 
