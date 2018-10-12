@@ -1,17 +1,12 @@
-import { Component, OnInit } from '@angular/core';
-import { Timeline } from '../data';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-timeline',
   templateUrl: './timeline.component.html',
   styleUrls: ['./timeline.component.css']
 })
-export class TimelineComponent implements OnInit {
+export class TimelineComponent {
 
-  timeline: Array<any>;
-
-  ngOnInit() {
-    this.timeline = Timeline;
-  }
+  @Input() timeline: Array<any>;
 
 }

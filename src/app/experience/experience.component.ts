@@ -1,17 +1,12 @@
-import { Component, OnInit } from '@angular/core';
-import { Experience } from '../data';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-experience',
   templateUrl: './experience.component.html',
   styleUrls: ['./experience.component.css']
 })
-export class ExperienceComponent implements OnInit {
+export class ExperienceComponent {
 
-  experience: Array<any>;
-
-  ngOnInit() {
-    this.experience = Experience;
-  }
+  @Input() experience: Array<any>;
 
 }
