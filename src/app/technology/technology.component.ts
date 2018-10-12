@@ -1,5 +1,4 @@
 import { Component, Input } from '@angular/core';
-import { TechnologiesLeft, TechnologiesRight } from '../data';
 
 @Component({
   selector: 'app-technology',
