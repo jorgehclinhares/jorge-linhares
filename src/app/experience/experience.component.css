@@ -1,9 +1,0 @@
-.experience {
-  padding-left: 30px;
-}
-
-@media (max-width: 768px) { 
-  .experience {
-    padding-left: 0px;
-  }
-} 

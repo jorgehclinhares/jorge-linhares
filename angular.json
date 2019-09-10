@@ -23,16 +23,9 @@
               "src/manifest.json"
             ],
             "styles": [
-              "src/styles.css",
-              "node_modules/uikit/dist/css/uikit.min.css",
-              "node_modules/uikit/dist/css/components/tooltip.min.css",
-              "node_modules/font-awesome/css/font-awesome.min.css"
+              "src/styles.scss"
             ],
-            "scripts": [
-              "node_modules/jquery/dist/jquery.min.js",
-              "node_modules/uikit/dist/js/uikit.min.js",
-              "node_modules/uikit/dist/js/components/tooltip.min.js"
-            ]
+            "scripts": []
           },
           "configurations": {
             "production": {
