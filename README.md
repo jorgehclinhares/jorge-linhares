@@ -1,2 +1,2 @@
 # Jorge Linhares | Porfólio ❤️
-Meu site desenvolvido com angular 7, dá uma olhada em [jorgelinhares.space 🔗](http://jorgelinhares.space)
+Meu portólio desenvolvido com Angular 8, dá uma olhada em [jorgelinhares.me 🔗](http://jorgelinhares.me)

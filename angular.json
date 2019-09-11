@@ -18,9 +18,7 @@
             "polyfills": "src/polyfills.ts",
             "assets": [
               "src/assets",
-              "src/favicon.ico",
-              "src/service-worker.js",
-              "src/manifest.json"
+              "src/favicon.ico"
             ],
             "styles": [
               "src/styles.scss"
@@ -71,16 +69,9 @@
             "karmaConfig": "./karma.conf.js",
             "polyfills": "src/polyfills.ts",
             "tsConfig": "src/tsconfig.spec.json",
-            "scripts": [
-              "node_modules/jquery/dist/jquery.min.js",
-              "node_modules/uikit/dist/js/uikit.min.js",
-              "node_modules/uikit/dist/js/components/tooltip.min.js"
-            ],
+            "scripts": [],
             "styles": [
-              "src/styles.css",
-              "node_modules/uikit/dist/css/uikit.min.css",
-              "node_modules/uikit/dist/css/components/tooltip.min.css",
-              "node_modules/font-awesome/css/font-awesome.min.css"
+              "src/styles.scss"
             ],
             "assets": [
               "src/assets",
