@@ -1,0 +1,53 @@
+@import '../../../../styles/colors.scss';
+@import '../../../../styles/animations.scss';
+
+header {
+  padding: 16px;
+  display: flex;
+  justify-content: center;
+  @include fadein(0.5s);
+
+  div.content {
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+
+    img.profile {
+      width: 35px;
+      height: 35px;
+      border-radius: 50%;
+      box-shadow: 5px 5px 10px rgba($color: #000000, $alpha: 0.16);
+      transition: all 0.5s;
+      border: 1px solid;
+      cursor: pointer;
+      margin-left: 36px;
+      outline: none;
+
+      &:hover {
+        border: 1px solid $accent;
+        transition: all 0.5s;
+      }
+    }
+
+    h2 {
+      font-size: 28px;
+      color: #ffffff;
+      margin: 0;
+      margin-left: 16px;
+      display: flex;
+      align-items: center;
+      cursor: pointer;
+    }
+
+    h3.name {
+      font-size: 14px;
+      color: #ffffff;
+      display: flex;
+      align-items: center;
+      cursor: pointer;
+      margin: 0;
+      margin-left: 16px;
+      outline: none;
+    }
+  }
+}

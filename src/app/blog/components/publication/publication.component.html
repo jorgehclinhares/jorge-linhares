@@ -1,0 +1,6 @@
+<section class="blog">
+  <app-header></app-header>
+  <article>
+    <div class="content" *ngIf="markdownRef" NgxMd [path]="markdownRef"></div>
+  </article>
+</section>

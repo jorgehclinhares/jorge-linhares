@@ -1,0 +1,16 @@
+@import '../../../../styles/animations.scss';
+
+section.blog {
+  article {
+    color: #FFFFFF;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    @include fadein(1s);
+    div.content {
+      margin: 24px 16px 16px 16px;
+      width: 100%;
+      max-width: 1200px;
+    }
+  }
+}

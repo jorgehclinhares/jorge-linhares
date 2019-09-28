@@ -1,0 +1,61 @@
+@import '../../styles/animations.scss';
+@import '../../styles/colors.scss';
+
+@mixin section($align-items, $justify-content, $flex-direction) {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: $align-items;
+  justify-content: $justify-content;
+  flex-direction: $flex-direction;
+}
+
+section.intro {
+  background-size: cover;
+  background-position: center;
+  @include section(center, center, column);
+  @include fadein(1.5s);
+
+  img.profile {
+    width: 150px;
+    height: 150px;
+    margin-bottom: 16px;
+    border-radius: 50%;
+    box-shadow: 5px 5px 10px rgba($color: #000000, $alpha: 0.24);
+    transition: all 0.5s;
+
+    &:hover {
+      width: 200px;
+      height: 200px;
+      transition: all 0.5s;
+    }
+  }
+  h1.name {
+    color: $light;
+    font-size: 28px;
+    font-weight: 600;
+    text-shadow: 5px 5px 10px rgba($color: #000000, $alpha: 0.24);
+  }
+  h2.activity {
+    color: $light;
+    font-size: 16px;
+    font-weight: 400;
+    text-shadow: 5px 5px 10px rgba($color: #000000, $alpha: 0.24);
+  }
+  .social {
+    align-items: center;
+    justify-content: center;
+    margin-top: 16px;
+    color: $light;
+    a, a:visited {
+      color: $light;
+    }
+    svg {
+      padding: 0 8px;
+      cursor: pointer;
+    }
+    svg:hover {
+      color: $accent;
+    }
+  }
+}

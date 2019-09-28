@@ -5,11 +5,10 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "build": "ng build --prod --aot && npm run sw",
+    "build": "ng build --prod",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "sw": "sw-precache --root=dist --config=sw-precache-config.js",
     "pree2e": "webdriver-manager update",
     "static-serve": "cd dist && live-server --port=4200 --host=localhost --entry-file=/index.html"
   },
@@ -25,6 +24,7 @@
     "core-js": "^2.4.1",
     "enhanced-resolve": "^3.3.0",
     "moment": "^2.18.1",
+    "ngx-md": "^8.0.0",
     "rxjs": "^6.3.3",
     "tslib": "^1.10.0",
     "zone.js": "~0.9.1"
