@@ -31,7 +31,7 @@ header {
 
     h2 {
       font-size: 28px;
-      color: #ffffff;
+      color: $light;
       margin: 0;
       margin-left: 16px;
       display: flex;
@@ -41,7 +41,7 @@ header {
 
     h3.name {
       font-size: 14px;
-      color: #ffffff;
+      color:$light;
       display: flex;
       align-items: center;
       cursor: pointer;

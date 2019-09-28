@@ -20,7 +20,7 @@ export class PublicationComponent implements OnInit {
   }
 
   ngOnInit() {
-    this.blogService.loadPublications();
+    console.log(this.blogService.getPublications());
   }
 
 }

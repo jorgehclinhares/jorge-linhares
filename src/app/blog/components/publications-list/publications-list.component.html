@@ -1,0 +1,10 @@
+<app-header></app-header>
+<section class="publications">
+  <div class="content">
+    <article *ngFor="let publication of publications" [routerLink]="['/blog/' + publication.identifier ]">
+      <time>{{ publication.date }}</time>
+      <h2>{{ publication.title }}</h2>
+      <p>{{ publication.resume }}</p>
+    </article>
+  </div>
+</section>

@@ -23,6 +23,7 @@
     "@angular/router": "^8.2.5",
     "core-js": "^2.4.1",
     "enhanced-resolve": "^3.3.0",
+    "fs": "0.0.1-security",
     "moment": "^2.18.1",
     "ngx-md": "^8.0.0",
     "rxjs": "^6.3.3",

@@ -1,8 +1,9 @@
 @import '../../../../styles/animations.scss';
+@import '../../../../styles/colors.scss';
 
 section.blog {
   article {
-    color: #FFFFFF;
+    color: $light;
     width: 100%;
     display: flex;
     justify-content: center;
